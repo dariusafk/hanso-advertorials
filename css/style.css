@@ -723,12 +723,25 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--color-text-secondary);
 }
 
+/* table wrapper for mobile scroll */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5em 0;
+}
+
+.table-wrap table {
+  margin: 0;
+}
+
 /* tables */
 .article-body table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5em 0;
   font-size: 0.88rem;
+  min-width: 540px;
 }
 
 .article-body thead { background: var(--color-accent); color: white; }
